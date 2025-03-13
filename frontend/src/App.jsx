@@ -16,6 +16,7 @@ import LoadingSpinner from "./components/common/LoadingSpinner";
 
 function App() {
   useEffect(() => {
+    document.body.style.backgroundColor = "#000";
     document.documentElement.setAttribute("data-theme", "black");
   }, []);
 
@@ -48,7 +49,7 @@ function App() {
   }
 
   return (
-    <div className="flex max-w-6xl mx-auto">
+    <div className="bg-black flex max-w-6xl mx-auto">
       {/* Common component, bc it's not wrapped with Routes */}
       {authUser && <Sidebar />}
       <Routes>
