@@ -45,7 +45,7 @@ const Sidebar = () => {
           />
           {/* <XSvg className='px-2 w-12 h-12 rounded-full fill-white hover:bg-stone-900' /> */}
         </Link>
-        <ul className="flex flex-col gap-3 mt-4">
+        <ul className="flex flex-col text-gray-500 gap-3 mt-4">
           <li className="flex justify-center md:justify-start">
             <Link
               to="/"
@@ -81,7 +81,7 @@ const Sidebar = () => {
             className="mt-auto mb-10 flex gap-2 items-start transition-all duration-300 hover:bg-[#181818] py-2 px-4 rounded-full"
           >
             <div className="avatar hidden md:inline-flex">
-              <div className="w-8 rounded-full">
+              <div className="w-8 max-w-8 max-h-8 rounded-full">
                 <img src={authUser?.profileImg || "/avatar-placeholder.png"} />
               </div>
             </div>
